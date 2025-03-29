@@ -1,6 +1,4 @@
-import models.Aluno;
-import models.Escola;
-import models.Professor;
+import models.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,6 +26,15 @@ public class Main {
         escola.adicionarProfessor(professor4);
 
         escola.listaDeAluno();
+
+        System.out.println("--------------------------------------------------------------------------------------------");
+
         escola.listaDeProfessores();
+
+
+        Turma turma = new Turma("Java", 2025, professor1);
+        Disciplina disciplina = new Disciplina("TI", 80, professor1);
+
+
     }
 }
